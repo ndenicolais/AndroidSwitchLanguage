@@ -9,13 +9,13 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
-class LanguageButton : AppCompatActivity() {
+class LanguageList : AppCompatActivity() {
     lateinit var mBtn : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         loadLocate()
-        setContentView(R.layout.activity_language_button)
+        setContentView(R.layout.activity_language_list)
         mBtn = findViewById(R.id.mChangeLang)
         mBtn.setOnClickListener {
             showChangeLang()
@@ -24,7 +24,7 @@ class LanguageButton : AppCompatActivity() {
 
     private fun showChangeLang() {
         val listItmes = arrayOf("Italian", "English", "Espanol", "Francais", "Deutsch")
-        val mBuilder = AlertDialog.Builder(this@LanguageButton)
+        val mBuilder = AlertDialog.Builder(this@LanguageList)
         mBuilder.setTitle(R.string.changeLangTitle)
         mBuilder.setSingleChoiceItems(listItmes, -1) { dialog, which ->
             if (which == 0) {

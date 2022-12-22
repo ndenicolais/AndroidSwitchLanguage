@@ -10,9 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val langBtn = findViewById<Button>(R.id.btnButton)
-        langBtn.setOnClickListener {
-            startActivity(Intent(this, LanguageButton::class.java))
+        val listBtn = findViewById<Button>(R.id.btnList)
+        listBtn.setOnClickListener {
+            startActivity(Intent(this, LanguageList::class.java))
         }
 
         val spinnerBtn = findViewById<Button>(R.id.btnSpinner)

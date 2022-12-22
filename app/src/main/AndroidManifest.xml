@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
-        <activity android:name=".LanguageButton"/>
+        <activity android:name=".LanguageList"/>
         <activity android:name=".LanguageSpinner"/>
     </application>
 </manifest>

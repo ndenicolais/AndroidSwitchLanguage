@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SwitchLanguage</string>
-    <string name="changeLangTitle">Change language</string>
-    <string name="changeLangText">Change language</string>
-    <string name="changeLangButton">Use the button to change the language</string>
-    <string name="changeLangSpinner">Use spinner to change language</string>
+    <string name="changeLangTitle">Select language</string>
+    <string name="changeLangText">Select language</string>
+    <string name="changeLangList">Select by LIST</string>
+    <string name="changeLangSpinner">Selected by SPINNER</string>
 </resources>
