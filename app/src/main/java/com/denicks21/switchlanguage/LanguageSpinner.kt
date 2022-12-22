@@ -10,7 +10,7 @@ import java.util.*
 class LanguageSpinner : AppCompatActivity() {
     var spinner: Spinner? = null
     var myLocale: Locale? = null
-    private var currentLanguage = "it"
+    private var currentLanguage = "en"
     private var currentLang: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,8 +20,8 @@ class LanguageSpinner : AppCompatActivity() {
         currentLanguage = intent.getStringExtra(currentLang).toString()
         spinner = findViewById<View>(R.id.spinner) as Spinner
         val list = ArrayList<String>()
-        list.add("Italian")
         list.add("English")
+        list.add("Italian")
         list.add("Espanol")
         list.add("Francais")
         list.add("Deutsch")
@@ -37,8 +37,8 @@ class LanguageSpinner : AppCompatActivity() {
             ) {
                 when (position) {
                     0 -> {}
-                    1 -> setLocale("it")
-                    2 -> setLocale("us")
+                    1 -> setLocale("en")
+                    2 -> setLocale("it")
                     3 -> setLocale("es")
                     4 -> setLocale("fr")
                     5 -> setLocale("de")

@@ -23,15 +23,15 @@ class LanguageList : AppCompatActivity() {
     }
 
     private fun showChangeLang() {
-        val listItmes = arrayOf("Italian", "English", "Espanol", "Francais", "Deutsch")
+        val listItmes = arrayOf("English", "Italian", "Espanol", "Francais", "Deutsch")
         val mBuilder = AlertDialog.Builder(this@LanguageList)
         mBuilder.setTitle(R.string.changeLangTitle)
         mBuilder.setSingleChoiceItems(listItmes, -1) { dialog, which ->
             if (which == 0) {
-                setLocate("it")
+                setLocate("en")
                 recreate()
             } else if (which == 1) {
-                setLocate("us")
+                setLocate("it")
                 recreate()
             } else if (which == 2) {
                 setLocate("es")

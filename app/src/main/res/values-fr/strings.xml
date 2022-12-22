@@ -4,4 +4,6 @@
     <string name="changeLangText">Sélectionner la langue</string>
     <string name="changeLangList">Sélectionner via LISTA</string>
     <string name="changeLangSpinner">Sélectionnez via SPINNER</string>
+    <string name="list">LISTE</string>
+    <string name="spinner">SPINNER</string>
 </resources>
